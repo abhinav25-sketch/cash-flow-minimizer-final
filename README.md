@@ -1,76 +1,124 @@
-# cash-flow-minimizer-final
+# Cash Flow Optimizer
 
-1. PROJECT TITLE
+## Overview
 
-Cash Flow Minimizer: An Intelligent Transaction Optimization System
+Cash Flow Optimizer is a web-based intelligent transaction optimization system that minimizes the number of payments required to settle debts among multiple participants.
 
-2. SOLUTION OVERVIEW
-The Cash Flow Minimizer is a web-based application that solves the multi-party debt settlement problem using a greedy algorithm with max heaps. When multiple people owe money to each other, this system calculates the minimum number of transactions needed to settle all debts, reducing complexity and transaction overhead.
+The system uses a greedy algorithm with max-heap optimization to reduce unnecessary transactions and simplify group expense settlements.
 
-Problem: If 5 people have 20 transactions between them, settling requires 20 payments.
-Solution: Our algorithm reduces this to the minimum possible settlements (typically 3-4 payments).
+This project is useful for:
+- trip expense management
+- shared apartment expenses
+- office/team settlements
+- family expense balancing
 
-Technology Stack:
-- Frontend: React 18.3 with TypeScript
-- Styling: Tailwind CSS with Shadcn UI components
-- State Management: React Hooks (useState)
-- Visualization: Recharts library
-- Algorithm: Greedy approach with Max Heap (O(n log n))
+---
 
-3. USER INTERFACE COMPONENTS & FEATURES
+## Features
 
-3.1 Transaction Input Section
-Lets users add a new transaction by entering payer, receiver, and positive amount, then clicking Add Transaction.
+- Add and manage transactions
+- Automatic debt optimization
+- Minimized settlement calculation
+- Real-time balance tracking
+- Statistics dashboard
+- Interactive balance charts
+- Settlement flow visualization
+- Currency conversion support
+- Group transaction management
+- Export transaction data
+- Responsive modern UI
 
-3.2 Transaction List Display
-Shows all transactions in order with delete option, animations, and empty-state message.
+---
 
-3.3 Statistics Dashboard
-Four cards show unique participants, total amount, average transaction, and largest payment.
+## Tech Stack
 
-3.4 Action Buttons
-Minimize Cash Flow runs optimization; Clear All wipes all data after confirmation.
+- React
+- TypeScript
+- Tailwind CSS
+- Shadcn UI
+- Recharts
+- React Hooks
 
-3.5 Balance Display
-Lists each person’s net balance with color indicators for pay/receive/settled.
+---
 
-3.6 Optimized Settlement Display
-Shows minimum required settlement transactions and compares count before/after.
+## Algorithm Used
 
-3.7 Balance Chart (Bar Graph)
-Bar graph showing participant names vs net balances with colored bars and tooltips.
+The project uses a:
 
-3.8 Settlement Flow Chart
-Arrow-based flow diagram showing optimized payments from payer to receiver.
+- Greedy Algorithm
+- Max Heap Optimization
 
-3.9 Currency Converter
-Converts total amount across major currencies using live exchange rates.
+to minimize the total number of transactions required for settlement.
 
-3.10 Group Manager
-Allows saving, loading, and deleting transaction groups via localStorage.
+### Time Complexity
 
-3.11 Export Options
-Exports data as CSV, TXT, and supports sharing through mobile/clipboard.
+```text
+O(n log n)
+```
 
-4. ALGORITHM WORKFLOW
-  1.	User inputs transactions.
-  2.	System computes net balance for each person.
-  3.	Max-heap optimization algorithm minimizes total settlements.
-  4.	Reduced transaction set is generated.
-  5.	Visual charts and flow diagrams display before–after comparison.
-   
-Time Complexity: O(n log n)
-Space Complexity: O(n)
+### Space Complexity
 
-5. KEY BENEFITS
-●	Cuts transactions by 50–70%, saving time and costs.
-●	Simple, visual, and privacy-focused design.
-●	Mobile-responsive with easy export options.
+```text
+O(n)
+```
 
-6. USE CASES
-●	Trip, office, or family expense management.
+---
 
-7. TECHNICAL HIGHLIGHTS
-●	Responsive React UI with Tailwind + Shadcn.
-●	Real-time updates, validation, and error handling.
-●	Accessible and performance-optimized.
+## Workflow
+
+```text
+Add Transactions
+      ↓
+Calculate Net Balances
+      ↓
+Apply Greedy Heap Algorithm
+      ↓
+Generate Optimized Settlements
+      ↓
+Display Charts & Analytics
+```
+
+---
+
+## Dashboard Features
+
+### Statistics Cards
+- Total Participants
+- Total Transaction Amount
+- Average Transaction
+- Largest Payment
+
+### Balance Visualization
+- Net balance display
+- Color-coded settlement indicators
+- Interactive charts
+
+### Settlement Flow
+- Optimized payment flow diagrams
+- Before vs after comparison
+
+---
+
+## Key Benefits
+
+- Reduces unnecessary transactions
+- Saves time and payment complexity
+- User-friendly interface
+- Real-time calculations
+- Mobile responsive design
+
+---
+
+## Future Improvements
+
+- Authentication system
+- Cloud database integration
+- AI-powered expense insights
+- Multi-group collaboration
+- Online payment integration
+
+---
+
+## Author
+
+Abhinav Belhekar
